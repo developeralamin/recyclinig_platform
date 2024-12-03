@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="138" height="36" viewBox="0 0 138 36">
+  <g id="logo" transform="translate(0 2)">
+    <text id="Blogen" transform="translate(37 27)" fill="#4a4a4a" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Blogen</tspan></text>
+    <path id="Path_9" data-name="Path 9" d="M29.021,4.979A17,17,0,1,0,4.979,29.021Z" fill="#8b5cf6"/>
+    <path id="Path_10" data-name="Path 10" d="M4.979,4.979A17,17,0,1,0,29.021,29.021Z" fill="#8b5cf6" opacity="0.5"/>
+  </g>
+</svg>

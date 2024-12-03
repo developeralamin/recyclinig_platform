@@ -1,0 +1,113 @@
+/*login page css*/
+.bg-login-image {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+/* Update Footer */
+footer.sticky-footer {
+    box-shadow: 0 -3px 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/*Sidebar area css*/
+.bg-gradient-primary {
+    background-color: #4e73df;
+    background-image: linear-gradient(180deg, #1994a6 10%, #224abe 100%);
+    background-size: cover;
+}
+.sidebar-brand-logo img {
+    width: 150px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 14px;
+    padding-bottom: 15px;
+}
+
+/*
+.sidebar {
+    border-right: 1px solid #d7d8db !important;
+}
+.sidebar i,
+a {
+    color: #171717;
+}
+.sidebar-heading {
+    color: black !important;
+}
+.sidebar-dark hr.sidebar-divider {
+    border-top: 1px solid rgb(143 139 139 / 15%);
+} */
+
+/* ckEditor css */
+.sidebar-brand-logo {
+    /* background: #ffffff; */
+}
+
+#container {
+    width: 1000px;
+    margin: 20px auto;
+}
+.ck-editor__editable[role="textbox"] {
+    /* editing area */
+    min-height: 200px;
+}
+.ck-content .image {
+    /* block images */
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/* article style css */
+.help_text {
+    color: #808080;
+}
+
+.article-description {
+    font-size: 18px;
+}
+.article-description th {
+    text-align: right;
+    width: 50%;
+}
+.article-description h2 {
+    color: #1a1a1a;
+    font-weight: 800;
+    font-family: Arial sans-serif;
+}
+.article-description img {
+    width: 90%;
+}
+
+/* Custom alert */
+.alert {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.alert ul {
+    padding: 0;
+    margin: 0;
+}
+.alert ul li {
+    list-style: none;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.alert-error {
+    background: #eed3d3;
+}
+.alert-error ul li {
+    color: #721c24;
+}
+
+.alert-success {
+    background: #d3eed3;
+}
+.alert-success ul li {
+    color: #155724;
+}

@@ -1,0 +1,63 @@
+#home {
+    background: #f3fdf4 !important;
+    min-height: 670px;
+}
+.ab {
+    background: #f3fdf4;
+}
+.main-bg {
+    background: #f3fdf4;
+}
+.button-bg {
+    background: #06aeef;
+}
+
+/*
+* Login form css
+*/
+.login-button {
+    margin-top: 17px;
+}
+.login-flex {
+    display: flex;
+    gap: 9px;
+}
+.small-btn {
+    color: #1890ff;
+}
+.full-width-btn {
+    width: 100%;
+}
+.remember-btn {
+    display: flex;
+    gap: 220px;
+}
+/* registration */
+.registration {
+    padding-bottom: 280px;
+}
+.text-danger {
+    color: red;
+}
+/* pricing table  */
+.badge-box {
+    margin-top: 30px;
+}
+.badge-box span {
+    display: inline-block;
+    border: 1px solid #4b7bec;
+    padding: 4px 12px;
+    border-radius: 25px;
+    overflow: hidden;
+    color: #4b7bec;
+}
+.price-info {
+    margin-top: -55px !important;
+}
+
+/* Mobile device css  */
+@media screen and (max-width: 770px) {
+    .remember-btn {
+        display: block;
+    }
+}
