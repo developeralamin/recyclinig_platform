@@ -23,11 +23,7 @@ class RegistrationController extends Controller
      */
     public function registrationForm()
     {
-        $this->data['site_info'] = SiteInfo::firstOrCreate();
-        if ($this->data['site_info']->logo) {
-            $this->data['site_info']->logo = Storage::url($this->data['site_info']->logo);
-        }
-        return view('auth.registration', $this->data);
+        return view('auth.registration');
     }
 
     /**

@@ -1,7 +1,7 @@
 @extends('website.layouts.master')
 
 @section('title')
-    {{ $site_info->tagline }}
+  Recycling
 @endsection
 
 @section('frontend_content')
@@ -12,10 +12,10 @@
                 <div class="a5 lg:a2u/2 af">
                     <div class="a3g lg:a3h aJ[470px] wow fadeInUp" data-wow-delay=".2s">
                         <h1 class="a25 a1j dark:a1k a2_ md:a30[45px] a31 md:a31 a1O">
-                            {{ $site_info->title }}
+                        Recycling
                         </h1>
                         <p class="a25 aR aT a3i">
-                        {{ $site_info->meta_description }}
+                       Recycling
                         </p>
                     </div>
                 </div>

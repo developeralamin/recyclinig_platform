@@ -5,10 +5,7 @@
 $prefix = Request::route()->getprefix();
 $route = Route::current()->getName();
 
-$site_info = App\Models\SiteInfo::first();
-if($site_info->logo) {
-$site_info->logo = Storage::url($site_info->logo);
-}
+
 
 @endphp
 

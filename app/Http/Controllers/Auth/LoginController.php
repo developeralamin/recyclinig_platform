@@ -18,11 +18,7 @@ class LoginController extends Controller
      */
     public function loginForm()
     {
-        $this->data['site_info'] = SiteInfo::firstOrCreate();
-        if ($this->data['site_info']->logo) {
-            $this->data['site_info']->logo = Storage::url($this->data['site_info']->logo);
-        }
-        return view('auth.login', $this->data);
+        return view('auth.login');
     }
 
     /**

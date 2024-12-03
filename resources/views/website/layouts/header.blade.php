@@ -5,10 +5,6 @@
 $prefix = Request::route()->getprefix();
 $route = Route::current()->getName();
 
-$site_info = App\Models\SiteInfo::first();
-if($site_info->logo) {
-$site_info->logo = Storage::url($site_info->logo);
-}
 
 @endphp
 
@@ -18,8 +14,8 @@ $site_info->logo = Storage::url($site_info->logo);
         <div class="a6 ac a7 ad ae">
             <div class="af ag ah">
                 <a href="{{ route('user') }}" :class="scrolledFromTop ? 'ai lg:aj' : 'ak lg:ai' " class="a5 al">
-                    <img src="{{ $site_info->logo }}" alt="logo" class="a5 dark:am" />
-                    <img src="{{ $site_info->logo }}" alt="logo" class="a5 am dark:al" />
+                    <img src="" alt="logo" class="a5 dark:am" />
+                    <img src="" alt="logo" class="a5 am dark:al" />
                 </a>
             </div>
             <div class="a6 af an a7 a5">
