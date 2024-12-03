@@ -19,7 +19,7 @@ $site_info->logo = Storage::url($site_info->logo);
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
         <!-- Sidebar - Brand -->
         <div class="sidebar-brand-logo bg-white shadow">
-            <a href="https://blogen.net" target="_blank">
+            <a href="#" target="_blank">
                 @if($site_info->logo)
                 <img src="{{ $site_info->logo }}" alt="logo">
                 @endif
@@ -30,24 +30,24 @@ $site_info->logo = Storage::url($site_info->logo);
         <hr class="sidebar-divider my-0">
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item {{ ($route == 'user-dashboard')? 'active':'' }}">
-            <a class="nav-link" href="{{ route('user-dashboard') }}">
+        <li class="nav-item">
+            <a class="nav-link">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span>
             </a>
         </li>
 
         <!-- Nav Item - Charts -->
-        <li class="nav-item {{ ($route == 'article.create')? 'active':'' }}">
-            <a class=" nav-link" href="{{ route('article.create') }}">
+        <li class="nav-item">
+            <a class=" nav-link">
                 <i class="fas fa-fw fa-chart-area"></i>
                 <span>Info Articles</span>
             </a>
         </li>
 
         <!-- Nav Item - Tables -->
-        <li class="nav-item {{ ($route == 'website.index')? 'active':'' }}">
-            <a class="nav-link" href="{{ route('website.index') }}">
+        <li class="nav-item">
+            <a class="nav-link">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Add Website</span>
             </a>
@@ -59,38 +59,20 @@ $site_info->logo = Storage::url($site_info->logo);
             Billings
         </div>
         <!-- Nav Item - Tables -->
-        <li class="nav-item {{ ($route == 'package-list')? 'active':'' }}">
-            <a class="nav-link" href="{{ route('package-list') }}">
+        <li class="nav-item">
+            <a class="nav-link" >
                 <i class="fas fa-fw fa-table"></i>
                 <span>Recharge</span>
             </a>
         </li>
         <!-- Nav Item - Tables -->
-        <li class="nav-item {{ ($route == 'stripe-payment-list')? 'active':'' }}">
-            <a class="nav-link" href="{{ route('stripe-payment-list') }}">
+        <li class="nav-item ">
+            <a class="nav-link">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Payments</span>
             </a>
         </li>
-        <!-- Divider -->
-        <!-- <hr class="sidebar-divider"> -->
-        <!-- Heading -->
-        <!-- <div class="sidebar-heading">
-            Settings
-        </div> -->
-        <!-- Nav Item - Tables -->
-        <!-- <li class="nav-item {{ ($route == 'user-profile-view')? 'active':'' }}">
-            <a class="nav-link" href="{{ route('user-profile-view') }}">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Profile</span>
-            </a>
-        </li>
-        <li class="nav-item {{ ($route == 'user-password-form')? 'active':'' }}">
-            <a class="nav-link" href="{{ route('user-password-form') }}">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Update Password</span>
-            </a>
-        </li> -->
+
 
         <!-- Sidebar Toggler (Sidebar) -->
         <div class="text-center d-none d-md-inline">
