@@ -5,7 +5,6 @@
 $prefix = Request::route()->getprefix();
 $route = Route::current()->getName();
 
-
 @endphp
 
 
