@@ -20,9 +20,7 @@ $site_info->logo = Storage::url($site_info->logo);
         <!-- Sidebar - Brand -->
         <div class="sidebar-brand-logo bg-white shadow">
             <a href="#" target="_blank">
-                @if($site_info->logo)
-                <img src="{{ $site_info->logo }}" alt="logo">
-                @endif
+                <img src="" alt="logo">
             </a>
         </div>
 
