@@ -26,12 +26,12 @@
                 <div class="row no-gutters align-items-center">
 
                     <div class="col mr-2">
-                        <a href="{{ route('article.index') }}">
+                        <a href="">
                             <div class="text-sm font-weight-bold text-info text-uppercase mb-1">
                                 Total Articles
                             </div>
                         </a>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{$total_article}}</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">334</div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
@@ -50,7 +50,7 @@
                         </div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{$total_website}}</div>
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">3434</div>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                         </div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{$total_payment}}</div>
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">3443</div>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{$total_balance}}</div>
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">32432</div>
                             </div>
                         </div>
                     </div>
