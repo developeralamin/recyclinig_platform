@@ -1,3 +1,9 @@
+#home {
+    background: url('backend/img/_background.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh; 
+}
 /*login page css*/
 .bg-login-image {
     background-position: center;
