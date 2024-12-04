@@ -24,8 +24,12 @@ Route::get('verificationEmailUseToken/{token}', [RegistrationController::class, 
 
 //Frontend All Routes
 Route::get('/', function () {
-    return redirect('user');
-})->name('home');
+    return view('frontend.main');
+});
+
+// Route::get('/', function () {
+//     return redirect('user');
+// })->name('home');
 
 
 Route::middleware(['auth', 'verified'])->group(function () {

@@ -7,7 +7,7 @@
             <div class="a5 af">
                 <div class="aJ[510px] a2f a2g a3p[70px] wow fadeInUp" data-wow-delay=".2s">
                     <h2 class="a1X a3q sm:a2_ a1j dark:a1k a28">
-                        {{ $pageContent->title }}
+                        Hello
                     </h2>
 
                 </div>
@@ -16,7 +16,7 @@
         <div class="aJ[770px] a2f a4t a4d ae a0 dark:a1 a2d wow fadeInUp" data-wow-delay=".3s">
             <div class="sm:a4u[70px]">
                 <p class="a25 aR aT">
-                    {!! $pageContent->description !!}
+                   hello
                 </p>
             </div>
             <div>
