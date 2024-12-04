@@ -10,12 +10,7 @@
             <div class="a6 a1K a7 ac">
                 <div class="a5 lg:a2u/2 af">
                     <div class="a3g lg:a3h aJ[470px] wow fadeInUp" data-wow-delay=".2s">
-                        <h1 class="a25 a1j dark:a1k a2_ md:a30[45px] a31 md:a31 a1O">
-                        Recycling
-                        </h1>
-                        <p class="a25 aR aT a3i">
-                        Recycling
-                        </p>
+                       
                     </div>
                 </div>
                 <div class="a5 lg:a2u/2 af">

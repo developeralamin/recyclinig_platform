@@ -14,7 +14,7 @@ $route = Route::current()->getName();
             <div class="af ag ah">
                 <a href="{{ route('user') }}" :class="scrolledFromTop ? 'ai lg:aj' : 'ak lg:ai' " class="a5 al">
                     
-                    <img src="{{ asset('backend/img/logo.png') }}" alt="logo" class="a5 dark:am" />
+                    <!-- <img src="{{ asset('backend/img/_background.png') }}" alt="logo" class="a5 dark:am" /> -->
 
                 </a>
             </div>

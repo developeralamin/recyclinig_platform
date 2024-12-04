@@ -1,4 +1,4 @@
-@extends('website.layouts.master')
+<!-- @extends('website.layouts.master') -->
 
 @section('title')
   Recycling
@@ -6,21 +6,21 @@
 
 @section('frontend_content')
 <section id="home">
-    <div class="">
-        <div class="ab">
+    <div>
+        <div class="ab mt-5">
             <div class="a6 a1K a7 ac">
                 <div class="a5 lg:a2u/2 af">
                     <div class="a3g lg:a3h aJ[470px] wow fadeInUp" data-wow-delay=".2s">
                         <h1 class="a25 a1j dark:a1k a2_ md:a30[45px] a31 md:a31 a1O">
-                          Recycling
+                        <!-- <img src="{{ asset('backend/img/_background.png') }}" alt="logo" class="a5 dark:am" /> -->
                         </h1>
-                        <p class="a25 aR aT a3i">
+                        <!-- <p class="a25 aR aT a3i">
                        Recycling
-                        </p>
+                        </p> -->
                     </div>
                 </div>
 
-                <div class="a5 lg:a2u/2 af">
+                <div class="a5 lg:a2u/2 af mt-5">
 
                     @if(session()->has('message'))
                         <div class="alert alert-success">
@@ -38,7 +38,7 @@
                         </div>
                     @endif
 
-                    <div class="ae a2d aA[532px] wow fadeInUp" data-wow-delay=".25s">
+                    <div class="ae a2d aA[532px] wow fadeInUp  mt-5" data-wow-delay=".25s">
                         <div class="a3V a3W sm:a4u[70px] a0 dark:aC a4d a2C a4v dark:a4w">
                             <h2 class="a2g a1X a3q sm:a2_ a1j dark:a1k a28">Login</h2>
                             <form action="{{ route('login-confirm') }}" method="post">
