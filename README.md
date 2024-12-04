@@ -15,7 +15,7 @@ How to setup locally
 
 -  Clone the repository
 ```bash
-git clone https://github.com/developeralamin/
+git clone https://github.com/developeralamin/recyclinig_platform
 ```
 
 - Install dependencies
