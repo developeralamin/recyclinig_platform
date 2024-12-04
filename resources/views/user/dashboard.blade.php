@@ -28,7 +28,7 @@
                     <div class="col mr-2">
                         <a href="">
                             <div class="text-sm font-weight-bold text-info text-uppercase mb-1">
-                                Total Articles
+                                Total Categories
                             </div>
                         </a>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">334</div>
@@ -46,7 +46,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-sm font-weight-bold text-info text-uppercase mb-1">Total Websites
+                        <div class="text-sm font-weight-bold text-info text-uppercase mb-1">Total Recycling
                         </div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
@@ -68,7 +68,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-sm font-weight-bold text-info text-uppercase mb-1">Total Payments
+                        <div class="text-sm font-weight-bold text-info text-uppercase mb-1">Total User
                         </div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
@@ -84,25 +84,6 @@
         </div>
     </div>
     <!-- Balance  Card Example -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-info shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-sm font-weight-bold text-info text-uppercase mb-1">Available Credits
-                        </div>
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">32432</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 </div>
 @endsection

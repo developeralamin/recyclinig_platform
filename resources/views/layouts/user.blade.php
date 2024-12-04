@@ -17,7 +17,8 @@ $route = Route::current()->getName();
         <!-- Sidebar - Brand -->
         <div class="sidebar-brand-logo bg-white shadow">
             <a href="#" target="_blank">
-                <img src="" alt="logo">
+            <img src="{{ asset('backend/img/logo.png') }}" alt="logo" class="a5 dark:am" style="width:94px"/>
+
             </a>
         </div>
 
@@ -36,7 +37,7 @@ $route = Route::current()->getName();
         <li class="nav-item">
             <a class=" nav-link">
                 <i class="fas fa-fw fa-chart-area"></i>
-                <span>Info Articles</span>
+                <span>Categories</span>
             </a>
         </li>
 
@@ -44,29 +45,29 @@ $route = Route::current()->getName();
         <li class="nav-item">
             <a class="nav-link">
                 <i class="fas fa-fw fa-table"></i>
-                <span>Add Website</span>
+                <span>Recycling</span>
             </a>
         </li>
         <!-- Divider -->
         <hr class="sidebar-divider">
         <!-- Heading -->
-        <div class="sidebar-heading">
+        <!-- <div class="sidebar-heading">
             Billings
-        </div>
+        </div> -->
         <!-- Nav Item - Tables -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link" >
                 <i class="fas fa-fw fa-table"></i>
                 <span>Recharge</span>
             </a>
-        </li>
+        </li> -->
         <!-- Nav Item - Tables -->
-        <li class="nav-item ">
+        <!-- <li class="nav-item ">
             <a class="nav-link">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Payments</span>
             </a>
-        </li>
+        </li> -->
 
 
         <!-- Sidebar Toggler (Sidebar) -->
@@ -142,7 +143,7 @@ $route = Route::current()->getName();
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; <a href="http://blogen.net" target="_blank"> Blogen </a></span>
+                    <span>Copyright &copy; <a href="#" target="_blank"> Recycling </a></span>
                 </div>
             </div>
         </footer>
