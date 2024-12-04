@@ -5,10 +5,7 @@
 $prefix = Request::route()->getprefix();
 $route = Route::current()->getName();
 
-$site_info = App\Models\SiteInfo::first();
-if($site_info->logo) {
-$site_info->logo = Storage::url($site_info->logo);
-}
+
 
 @endphp
 
@@ -20,9 +17,8 @@ $site_info->logo = Storage::url($site_info->logo);
         <!-- Sidebar - Brand -->
         <div class="sidebar-brand-logo bg-white shadow">
             <a href="#" target="_blank">
-                @if($site_info->logo)
-                <img src="{{ $site_info->logo }}" alt="logo">
-                @endif
+            <img src="{{ asset('backend/img/logo.png') }}" alt="logo" class="a5 dark:am" style="width:94px"/>
+
             </a>
         </div>
 
@@ -41,7 +37,7 @@ $site_info->logo = Storage::url($site_info->logo);
         <li class="nav-item">
             <a class=" nav-link">
                 <i class="fas fa-fw fa-chart-area"></i>
-                <span>Info Articles</span>
+                <span>Categories</span>
             </a>
         </li>
 
@@ -49,29 +45,29 @@ $site_info->logo = Storage::url($site_info->logo);
         <li class="nav-item">
             <a class="nav-link">
                 <i class="fas fa-fw fa-table"></i>
-                <span>Add Website</span>
+                <span>Recycling</span>
             </a>
         </li>
         <!-- Divider -->
         <hr class="sidebar-divider">
         <!-- Heading -->
-        <div class="sidebar-heading">
+        <!-- <div class="sidebar-heading">
             Billings
-        </div>
+        </div> -->
         <!-- Nav Item - Tables -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link" >
                 <i class="fas fa-fw fa-table"></i>
                 <span>Recharge</span>
             </a>
-        </li>
+        </li> -->
         <!-- Nav Item - Tables -->
-        <li class="nav-item ">
+        <!-- <li class="nav-item ">
             <a class="nav-link">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Payments</span>
             </a>
-        </li>
+        </li> -->
 
 
         <!-- Sidebar Toggler (Sidebar) -->
@@ -147,7 +143,7 @@ $site_info->logo = Storage::url($site_info->logo);
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; <a href="http://blogen.net" target="_blank"> Blogen </a></span>
+                    <span>Copyright &copy; <a href="#" target="_blank"> Recycling </a></span>
                 </div>
             </div>
         </footer>

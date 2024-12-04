@@ -124,7 +124,7 @@
     </div>
     <div class="a0 dark:a1 a2H wow fadeInUp" data-wow-delay=".25s">
         <p class="a25 aR aT a2g">
-            Copyright by Blogen 2023, All rights reserved.
+            Copyright by 2024 Recyclining.
         </p>
     </div>
 </footer>

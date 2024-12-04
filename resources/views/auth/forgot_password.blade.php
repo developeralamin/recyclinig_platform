@@ -2,24 +2,17 @@
 @section('frontend_content')
 
 <section id="home">
-    <div class="a2V a2W a2X a2r dark:a2Y[#3c3e56] dark:a2Z a3b[120px] a2U  a3e lg:a3f">
+    <div class="mt-5">
         <div class="ab">
             <div class="a6 a1K a7 ac">
                 <div class="a5 lg:a2u/2 af">
                     <div class="a3g lg:a3h aJ[470px] wow fadeInUp" data-wow-delay=".2s">
-                        <h1 class="a25 a1j dark:a1k a2_ md:a30[45px] a31 md:a31 a1O">
-                            Generate Blog Article
-                            <span class="a2x">By AI</span>
-                        </h1>
-                        <p class="a25 aR aT a3i">
-                            Write Full AI blog posts & auto publish to your website. 100% unique & human readable content
-                            Automation for building Amazon, Adsense & Ezoic based sites. SEO friendly content.
-                        </p>
+                       
 
                     </div>
                 </div>
 
-                <div class="a5 lg:a2u/2 af">
+                <div class="a5 lg:a2u/2 af mt">
 
                     <div class="ae a2d aA[532px] wow fadeInUp" data-wow-delay=".25s">
                         <div class="a3V a3W sm:a4u[70px] a0 dark:aC a4d a2C a4v dark:a4w">

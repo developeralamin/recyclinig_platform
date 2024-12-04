@@ -27,17 +27,6 @@ class UserController extends Controller
      */
     public function dashboard()
     {
-        $user = Auth::user();
-        if ($user->expire_date < date('Y-m-d')) {
-            $user->balance = 0;
-            $user->save();
-        }
-
-        $this->data['total_article'] =  InfoArticle::where('user_id', Auth::user()->id)->count();
-        $this->data['total_website'] =  Website::where('user_id', Auth::user()->id)->count();
-        $this->data['total_payment'] =  Payment::where('user_id', Auth::user()->id)->sum('amount');
-        $this->data['total_balance'] =  Auth::user()->balance;
-
-        return view('user.dashboard', $this->data);
+        return view('user.dashboard');
     }
 }
