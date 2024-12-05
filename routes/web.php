@@ -5,6 +5,7 @@ use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegistrationController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\User\ProfileController as UserProfileController;
 
 
@@ -24,8 +25,18 @@ Route::get('verificationEmailUseToken/{token}', [RegistrationController::class, 
 
 //Frontend All Routes
 Route::get('/', function () {
-    return redirect('user');
-})->name('home');
+    return view('frontend.content');
+});
+
+Route::get('how',[FrontendController::class,'how'])->name("how");
+Route::get('categories',[FrontendController::class,'category'])->name("category");
+Route::get('about',[FrontendController::class,'about'])->name("about");
+Route::get('scroreboard',[FrontendController::class,'scroreboard'])->name("scoreboard");
+Route::get('map',[FrontendController::class,'recyclingCenter'])->name("recyclingcenter");
+
+// Route::get('/', function () {
+//     return redirect('user');
+// })->name('home');
 
 
 Route::middleware(['auth', 'verified'])->group(function () {
