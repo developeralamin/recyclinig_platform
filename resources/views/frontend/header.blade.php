@@ -23,7 +23,7 @@
       <div class="header-menu-single">
         <nav class="header-nav">
           <ul>
-            <li><a href="{{ url('') }}">Home</a></li>
+            <li><a href="{{ route('how') }}">How to Recycle</a></li>
             <li><a class="price-nav" href="{{ route('category') }}">Category</a></li>
             <li><a class="price-nav" href="{{ route('recyclingcenter') }}">Nearby Recycling Centers</a></li>
             <li><a class="price-nav" href="{{ route('scoreboard') }}">ScoreBoard</a></li>
@@ -31,7 +31,11 @@
           </ul>
         </nav>
         <div class="buy-button">
-          <a href="#">Login</a>
+          @if(Auth::user())
+          <a href="{{ route('logout') }}">{{ Auth::user()->name }}</a>
+          @else 
+          <a href="{{ route('login') }}">Login</a>
+          @endif
         </div>
       </div>
     </div>
