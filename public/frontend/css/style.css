@@ -234,7 +234,7 @@ button:focus {
 	background: url(../../backend/img/_background.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 120vh;
+	height: 130vh;
 	position: relative;
 	margin-top: 85px;
 }
@@ -1011,7 +1011,7 @@ button:focus {
 
 /* about */
 .cardAbout{
-	margin-top: 150px;
+	margin-top: 120px;
 	width: 194%;
 	background-color: hsl(144.55deg 70.97% 87.84% / 96%);
 }
@@ -1034,4 +1034,23 @@ p.about-text {
 a.btnabout.btn.btn-primary {
     margin-left: 27px;
     margin-bottom: 38px;
+}
+
+.recycling-info h2 {
+    font-size: 20px;
+    color: #2C6E49;
+    margin-top: 8px;
+}
+.recycling-info {
+    margin-left: 35px;
+}
+
+.recycling-info p, .recycling-info ul {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.recycling-info ul {
+    list-style: disc;
+    margin-left: 20px;
 }

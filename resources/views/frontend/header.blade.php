@@ -25,7 +25,7 @@
           <ul>
             <li><a href="{{ route('how') }}">How to Recycle</a></li>
             <li><a class="price-nav" href="{{ route('category') }}">Category</a></li>
-            <li><a class="price-nav" href="{{ route('recyclingcenter') }}">Nearby Recycling Centers</a></li>
+            <!-- <li><a class="price-nav" href="{{ route('recyclingcenter') }}">Nearby Recycling Centers</a></li> -->
             <li><a class="price-nav" href="{{ route('scoreboard') }}">ScoreBoard</a></li>
             <li><a class="price-nav" href="{{ route('about') }}">About</a></li>
           </ul>
