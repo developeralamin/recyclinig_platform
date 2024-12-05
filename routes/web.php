@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegistrationController;
@@ -35,12 +36,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::prefix('user')->group(function () {
         Route::get('/', [UserController::class, 'dashboard'])->name('user');
         Route::get('/dashboard', [UserController::class, 'dashboard'])->name('user-dashboard');
-
         Route::get('/profile/view', [UserProfileController::class, 'viewProfile'])->name('user-profile-view');
         Route::get('/profile/edit', [UserProfileController::class, 'editProfile'])->name('user-profile-edit');
         Route::post('/profile/store', [UserProfileController::class, 'updateProfile'])->name('user-profile-update');
         Route::get('/change-password', [UserProfileController::class, 'changePasswordForm'])->name('user-password-form');
         Route::post('/change-password', [UserProfileController::class, 'changePassword'])->name('user.password.update');
-
+        Route::resource('categories', CategoryController::class);
     });
 });
