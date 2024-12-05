@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
-    /**
-     * Categories 
-     */
+    public function how(){
+        return view('frontend.how.index');
+    }
     public function category()
     {
         return view('frontend.category.index');

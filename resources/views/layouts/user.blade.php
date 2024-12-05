@@ -27,9 +27,9 @@ $route = Route::current()->getName();
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link">
+            <a class="nav-link" href="{{ url('/') }}" target="__blank">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashboard</span>
+                <span>Website</span>
             </a>
         </li>
 

@@ -28,10 +28,11 @@ Route::get('/', function () {
     return view('frontend.content');
 });
 
+Route::get('how',[FrontendController::class,'how'])->name("how");
 Route::get('categories',[FrontendController::class,'category'])->name("category");
 Route::get('about',[FrontendController::class,'about'])->name("about");
 Route::get('scroreboard',[FrontendController::class,'scroreboard'])->name("scoreboard");
-Route::get('recycling-center',[FrontendController::class,'recyclingCenter'])->name("recyclingcenter");
+Route::get('map',[FrontendController::class,'recyclingCenter'])->name("recyclingcenter");
 
 // Route::get('/', function () {
 //     return redirect('user');
