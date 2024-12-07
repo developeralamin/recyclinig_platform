@@ -24,11 +24,11 @@
                 @foreach ($categories as $category)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td><img src="{{ asset('storage/' . $category->image) }}" alt="" width="100"></td>
+                        <td><img src="{{ $category->image == null ? asset('images/default.png') : asset('storage/category/' . $category->image) }}"
+                                alt="" width="50" height="50"></td>
                         <td>{{ $category->name }}</td>
                         <td>{{ $category->description }}</td>
                         <td>
-                            <a href="{{ route('categories.show', $category->id) }}" class="btn btn-info btn-sm">View</a>
                             <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-warning btn-sm">Edit</a>
                             <form action="{{ route('categories.destroy', $category->id) }}" method="POST" class="d-inline">
                                 @csrf
