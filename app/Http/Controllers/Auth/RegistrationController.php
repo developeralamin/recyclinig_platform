@@ -43,8 +43,6 @@ class RegistrationController extends Controller
         $user->remember_token           = $token;
         $user->email_varification_token = $token;
         $user->is_active                = 1;
-        $user->balance                  = 5000;
-        $user->expire_date              = Carbon::now()->addDays(30);
         $user->save();
 
         Mail::to($user->email)->send(new VerificationEmail($user));

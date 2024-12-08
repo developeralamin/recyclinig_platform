@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Models\SiteInfo;
 use App\Http\Requests\LoginRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Storage;
 
 class LoginController extends Controller
 {
@@ -39,7 +37,7 @@ class LoginController extends Controller
                 Auth::logout();
                 return redirect()->route('login')->withErrors(['Your accout is not active. Please active you account.']);
             }
-            return redirect()->intended('user');
+            return redirect()->route('how');
         } else {
             return redirect()->route('login')->withErrors(['Invalid Email and password']);
         }
@@ -54,6 +52,6 @@ class LoginController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect()->to('/');
+        return redirect()->route('how');
     }
 }

@@ -9,7 +9,7 @@
           </span>
         </button>
         <!-- <h4>Recycling</h4> -->
-        <a href="{{ url('') }}"><img src="{{ asset('frontend/images/_logo.png') }}"></a> 
+        <a href="{{ route('how') }}"><img src="{{ asset('frontend/images/_logo.png') }}"></a> 
       </div>
       <div class="header-top-center">
         <p>Welcome on&nbsp;<a href="#">Recycling.co</a></p>
