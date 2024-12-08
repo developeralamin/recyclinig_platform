@@ -14,14 +14,14 @@
           <div class="banner-all-text">
             <div class="banner-text">
                   <!-- Card with image -->
-              <div class="cardAbout">
+              <div class="cardAbout recycl_category">
                 <div class="card-bodyabout">
                   <h5 class="about-title">Recycle Categories</h5>
-                  <div class="card-container">
+                  <div class="card-container" style="padding: 30px">
                     @foreach ($categories as $index => $category)
                     <a href="{{ route('recycle-event',$category->slug) }}">
                       <div class="card" style="background-color: {{ $colors[$index % count($colors)] }};">
-                        <img src="{{ $category->icon }}" alt="{{ $category->name }} Icon">
+                        <img src="{{ $category->image }}" >
                         <p>{{ $category->name }}</p>
                       </div>
                       </a>

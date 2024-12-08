@@ -6,8 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Models\RecyclingEvent;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\User;
 use App\Models\RecyclingParticipant;
 use App\Models\RecyclingParticipantItem;
+use Illuminate\Support\Facades\DB;
 
 class FrontendController extends Controller
 {
@@ -68,7 +70,12 @@ class FrontendController extends Controller
     }
     public function scroreboard()
     {
-        return view('frontend.scoreboard.index');
+     $participants = User::select('users.name', DB::raw('SUM(recycling_participants.count) as total_participation'))
+       ->join('recycling_participants', 'users.id', '=', 'recycling_participants.user_id')
+       ->groupBy('users.name', 'users.id')
+       ->get();
+
+        return view('frontend.scoreboard.index',compact('participants'));
     }
     // public function recyclingCenter()
     // {

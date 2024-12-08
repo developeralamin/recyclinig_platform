@@ -24,8 +24,7 @@
                 @foreach ($categories as $category)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td><img src="{{ $category->image == null ? asset('images/default.png') : asset('storage/category/' . $category->image) }}"
-                                alt="" width="50" height="50"></td>
+                        <td><img src="{{ $category->image }}" alt="" width="50" height="50"></td>
                         <td>{{ $category->name }}</td>
                         <td>{{ $category->description }}</td>
                         <td>

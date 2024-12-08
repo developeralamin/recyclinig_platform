@@ -35,9 +35,9 @@ Route::get('categories',[FrontendController::class,'category'])->name("category"
 Route::get('recycle/event/{slug}',[FrontendController::class,'recycleEvent'])->name("recycle-event");
 Route::get('/events/{id}', [FrontendController::class, 'show'])->name('events.show');
 Route::delete('/events/{id}', [FrontendController::class, 'destroy'])->name('events.destroy');
+Route::get('scroreboard',[FrontendController::class,'scroreboard'])->name("scoreboard");
 
 Route::get('about',[FrontendController::class,'about'])->name("about");
-Route::get('scroreboard',[FrontendController::class,'scroreboard'])->name("scoreboard");
 Route::get('map',[FrontendController::class,'recyclingCenter'])->name("recyclingcenter");
 
 // Route::get('/', function () {
