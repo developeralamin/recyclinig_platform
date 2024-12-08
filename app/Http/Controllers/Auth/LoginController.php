@@ -37,7 +37,7 @@ class LoginController extends Controller
                 Auth::logout();
                 return redirect()->route('login')->withErrors(['Your accout is not active. Please active you account.']);
             }
-            return redirect()->to('/');
+            return redirect()->route('how');
         } else {
             return redirect()->route('login')->withErrors(['Invalid Email and password']);
         }
@@ -52,6 +52,6 @@ class LoginController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect()->to('/');
+        return redirect()->route('how');
     }
 }
