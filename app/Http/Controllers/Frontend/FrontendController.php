@@ -40,6 +40,9 @@ class FrontendController extends Controller
 
     public function destroy($id)
     {
+        if (!auth()->check()) {
+            return redirect()->route('login'); 
+        }
         $event = RecyclingEvent::findOrFail($id);
 
         // Check if a event and user already exists
