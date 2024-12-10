@@ -64,6 +64,8 @@ class FrontendController extends Controller
             'participant_id' => $participent->id,
         ]);
 
+        session()->flash('message', "You just recycled {$event->title}!");
+
         return back();
     }
 

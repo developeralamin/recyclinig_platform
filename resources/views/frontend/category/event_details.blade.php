@@ -6,6 +6,11 @@
         <div class="row justify-content-center">
             <div style="margin-top: 50px;background-color: aliceblue;">
                 <div>
+                @if(session()->has('message'))
+                        <div class="alert alert-success">
+                            {{ session('message') }}
+                        </div>
+                       @endif
                     <div class="card-header">
                         <h5 class="card-title mb-0">Recycle Event Details</h5>
                     </div>
