@@ -22,11 +22,16 @@
 
                 <div class="a5 lg:a2u/2 af mt-5">
 
-                    @if(session()->has('message'))
+                  
+
+                    <div class="ae a2d aA[532px] wow fadeInUp  mt-5" data-wow-delay=".25s">
+                        <div class="a3V a3W sm:a4u[70px] a0 dark:aC a4d a2C a4v dark:a4w">
+
+                        @if(session()->has('message'))
                         <div class="alert alert-success">
                             {{ session('message') }}
                         </div>
-                    @endif
+                       @endif
 
                     @if ($errors->any())
                         <div class="alert alert-error">
@@ -37,9 +42,6 @@
                             </ul>
                         </div>
                     @endif
-
-                    <div class="ae a2d aA[532px] wow fadeInUp  mt-5" data-wow-delay=".25s">
-                        <div class="a3V a3W sm:a4u[70px] a0 dark:aC a4d a2C a4v dark:a4w">
                             <h2 class="a2g a1X a3q sm:a2_ a1j dark:a1k a28">Login</h2>
                             <form action="{{ route('login-confirm') }}" method="post">
                                 @csrf
