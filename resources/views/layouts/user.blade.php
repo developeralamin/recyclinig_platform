@@ -13,7 +13,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
             <div class="sidebar-brand-logo bg-white shadow">
-                <a href="#" target="_blank">
+                <a href="{{ route('how') }}" target="_blank">
                     <img src="{{ asset('backend/img/logo.png') }}" alt="logo" class="a5 dark:am" style="width:94px" />
 
                 </a>
@@ -24,27 +24,27 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link">
+                <a class="nav-link" href="{{ route('user-profile-view') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
+                    <span>User Profile</span>
                 </a>
             </li>
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a href="{{ route('categories.index') }}" class=" nav-link">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Categories</span>
                 </a>
-            </li>
+            </li> -->
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link">
+            <!-- <li class="nav-item">
+                <a href="{{ route('recycling-event.index') }}" class="nav-link">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Recycling</span>
                 </a>
-            </li>
+            </li> -->
             <!-- Divider -->
             <hr class="sidebar-divider">
             <!-- Heading -->

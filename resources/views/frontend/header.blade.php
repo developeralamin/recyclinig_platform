@@ -30,13 +30,38 @@
             <li><a class="price-nav" href="{{ route('about') }}">About</a></li>
           </ul>
         </nav>
-        <div class="buy-button">
-          @if(Auth::user())
-          <a href="{{ route('logout') }}">{{ Auth::user()->name }}</a>
-          @else 
-          <a href="{{ route('login') }}">Login</a>
-          @endif
-        </div>
+     
+  <ul class="navbar-nav ml-auto">
+              <li>
+                  <a href="#" id="" data-toggle="dropdown">
+                      @if(Auth::user())
+                      {{ Auth::user()->name }}
+                         <!-- Dropdown - User Information -->
+                  <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in">
+                      <a class="dropdown-item" href="{{ route('user-profile-view') }}">
+                          <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Profile
+                      </a>
+                      <a class="dropdown-item" href="{{ route('user-password-form') }}">
+                          <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Update Password
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="{{ route('logout') }}">
+                          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Logout
+                      </a>
+                  </div>
+                      @else
+                        <a href="{{ route('login') }}">Login</a>
+                    @endif
+                    </span>
+                     
+                  </a>
+               
+              </li>
+          </ul>
+
       </div>
     </div>
   </header>

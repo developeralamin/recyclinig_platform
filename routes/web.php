@@ -9,6 +9,7 @@ use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\RecyclingParticipantController;
 use App\Http\Controllers\User\ProfileController as UserProfileController;
+use App\Http\Controllers\RecyclingEventController;
 
 
 
@@ -26,11 +27,11 @@ Route::post('register', [RegistrationController::class, 'customRegistration'])->
 Route::get('verificationEmailUseToken/{token}', [RegistrationController::class, 'verifyEmail'])->name('vefity-email');
 
 //Frontend All Routes
-Route::get('/', function () {
-    return view('frontend.content');
-});
+// Route::get('/how', function () {
+//     return view('frontend.how.index');
+// });
 
-Route::get('how',[FrontendController::class,'how'])->name("how");
+Route::get('/',[FrontendController::class,'how'])->name("how");
 Route::get('categories',[FrontendController::class,'category'])->name("category");
 Route::get('recycle/event/{slug}',[FrontendController::class,'recycleEvent'])->name("recycle-event");
 Route::get('/events/{id}', [FrontendController::class, 'show'])->name('events.show');
@@ -57,7 +58,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::post('/profile/store', [UserProfileController::class, 'updateProfile'])->name('user-profile-update');
         Route::get('/change-password', [UserProfileController::class, 'changePasswordForm'])->name('user-password-form');
         Route::post('/change-password', [UserProfileController::class, 'changePassword'])->name('user.password.update');
+       
         Route::resource('categories', CategoryController::class);
-        Route::resource('recycling-participants', RecyclingParticipantController::class);
+        Route::resource('recycling-event', RecyclingEventController::class);
     });
 });
