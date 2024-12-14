@@ -80,6 +80,7 @@ class FrontendController extends Controller
        ->groupBy('users.name', 'users.id')
        ->get();
 
+
         return view('frontend.scoreboard.index',compact('participants'));
     }
     // public function recyclingCenter()

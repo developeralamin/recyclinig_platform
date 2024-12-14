@@ -1,3 +1,10 @@
+  @php 
+       $participants = App\Models\User::select('users.name', DB::raw('SUM(recycling_participants.count) as total_participation'))
+       ->join('recycling_participants', 'users.id', '=', 'recycling_participants.user_id')
+       ->where('users.id', Auth::id())
+       ->groupBy('users.name', 'users.id')
+       ->first();
+  @endphp 
   <!-- header area start here -->
   <!-- header area start here -->
   <header class="header-area-start">
@@ -35,7 +42,16 @@
               <li>
                   <a href="#" id="" data-toggle="dropdown">
                       @if(Auth::user())
-                      {{ Auth::user()->name }}
+                      <div style="display: flex;gap:20px;">
+                      <p style="width: 28px;
+    height: 28px;
+    background: #6cc090;
+    text-align: center;
+    line-height: 31px;
+    color: white;
+    border-radius: 14px;">{{$participants->total_participation}} </p><p>{{ Auth::user()->name }}</p> 
+                      </div>
+                  
                          <!-- Dropdown - User Information -->
                   <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in">
                       <a class="dropdown-item" href="{{ route('user-profile-view') }}">
